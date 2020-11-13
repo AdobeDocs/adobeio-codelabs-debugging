@@ -4,7 +4,9 @@ First of all, you need a new app created with AIO CLI.
 
 ![app-init](assets/app-init.png)
 
-Then, open the app in VSCode, and execute `aio app run` in the terminal. You will see the VSCode launch profile automatically generated in `.vscode/launch.json`, with a few available configurations:
+Then, open the app in VSCode, and execute `aio app run` in the terminal. Optionally, you can add `--local` flag to make your actions run in the local OpenWhisk environment, as well as `--verbose` flag to see more inspection details of your deployment.
+
+You will see the VSCode launch profile automatically generated in `.vscode/launch.json`, with a few available configurations:
 * `Action:test-app-debug-0.0.1/hello`: for debugging the `hello` action
 * `Web`: for debugging the UI components
 * `Actions` (compound): for debugging all actions
